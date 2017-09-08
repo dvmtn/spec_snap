@@ -1,4 +1,4 @@
-# SpecSupport
+# SpecSnap
 
 Handy starter config for RSpec helpers.
 
@@ -6,16 +6,16 @@ Many of us end up with a toolset we like to use during our builds and end up wit
 To make this a little more controlled and quicker to get started with, we at [Developer Mountain](http://devmountain.co.uk) are collecting our most frequently used configurations into this gem to share them and see if they are useful to other people.
 
 This gem provides a number of files which can be required in your `spec_helper.rb` or `rails_helper.rb` files to quickly get a reasonable config for integrating a tool or helper in rspec.
-A good example is `database_cleaner`, a popular way of rolling back changes to your DB during tests. A common configuration is provided, so you can simply add `require 'spec_support/database_cleaner'` to your spec_helper and be on your way.
+A good example is `database_cleaner`, a popular way of rolling back changes to your DB during tests. A common configuration is provided, so you can simply add `require 'spec_snap/database_cleaner'` to your spec_helper and be on your way.
 
-If you find SpecSupport useful, you might also enjoy [Rake-n-Bake](https://rubygems.org/gems/rake-n-bake), where we make our rake build configs modular and reusable in a similar way.
+If you find SpecSnap useful, you might also enjoy [Rake-n-Bake](https://rubygems.org/gems/rake-n-bake), where we make our rake build configs modular and reusable in a similar way.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'spec_support'
+gem 'spec_snap'
 ```
 
 And then execute:
@@ -24,14 +24,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install spec_support
+    $ gem install spec_snap
 
 
 ## Usage
 
-1. Look in `lib/spec_support` for any tools you want to drop in to your project quickly.
+1. Look in `lib/spec_snap` for any tools you want to drop in to your project quickly.
 2. Install this gem and any gems required for the tool (ie. add the [Database Cleaner]() gem to your Gemfile)
-2. In your `spec_helper.rb` or `rails_helper.rb`, require the config file. For example: `require 'spec_support/database_cleaner'`
+2. In your `spec_helper.rb` or `rails_helper.rb`, require the config file. For example: `require 'spec_snap/database_cleaner'`
 3. Enjoy having your tooling setup that little bit quicker and more consistently.
 
 ## Development
@@ -42,7 +42,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/dvmtn/spec_support. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/dvmtn/spec_snap. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
