@@ -11,3 +11,7 @@ module FeatureLoginHelper
   end
 
 end
+
+RSpec.configure do |config|
+  config.include FeatureLoginHelper, type: :feature
+end

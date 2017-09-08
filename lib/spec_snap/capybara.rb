@@ -33,3 +33,7 @@ module CapybaraHelper
     Capybara.ignore_hidden_elements = true
   end
 end
+
+RSpec.configure do |config|
+  config.include CapybaraHelper
+end
