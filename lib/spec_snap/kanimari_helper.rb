@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'Kaminari'
+require 'kaminari'
 
 RSpec.configure do |config|
   config.around(:example, :pagination_set_to_one) do |test|
